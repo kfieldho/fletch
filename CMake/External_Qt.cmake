@@ -33,6 +33,7 @@ if(Qt_WITH_libjpeg-turbo)
     -I ${fletch_BUILD_INSTALL_PREFIX}/include
     -L ${fletch_BUILD_INSTALL_PREFIX}/lib
     )
+  list(APPEND Qt_DEPENDS libjpeg-turbo)
 endif()
 
 # ZLib
@@ -49,6 +50,7 @@ if(Qt_WITH_ZLib)
     -I ${fletch_BUILD_INSTALL_PREFIX}/include
     -L ${fletch_BUILD_INSTALL_PREFIX}/lib
     )
+	list(APPEND Qt_DEPENDS ZLib)
 endif()
 
 # PNG
@@ -64,6 +66,7 @@ if(Qt_WITH_PNG)
     -I ${fletch_BUILD_INSTALL_PREFIX}/include
     -L ${fletch_BUILD_INSTALL_PREFIX}/lib
     )
+	list(APPEND Qt_DEPENDS PNG)
 endif()
 
 if(WIN32)

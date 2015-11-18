@@ -170,6 +170,7 @@ else()
   set(VTK_WRAP_PYTHON OFF)
   message(STATUS "VTK build without python support")
 endif()
+set(VTK_WRAP_PYTHON OFF)
 
 #
 # VTK
